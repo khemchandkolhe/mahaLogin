@@ -25,6 +25,7 @@ public class SecurityServiceImpl implements SecurityService{
         Object userDetails = SecurityContextHolder.getContext().getAuthentication().getDetails();
         if (userDetails instanceof UserDetails) {
       System.out.println();
+System.out.println();
             return ((UserDetails)userDetails).getUsername();
         }
 
@@ -37,7 +38,7 @@ public class SecurityServiceImpl implements SecurityService{
         UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, password, userDetails.getAuthorities());
 
         authenticationManager.authenticate(usernamePasswordAuthenticationToken);
-
+System.out.println();
         if (usernamePasswordAuthenticationToken.isAuthenticated()) {
             SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
             logger.debug(String.format("Auto login %s successfully!", username));

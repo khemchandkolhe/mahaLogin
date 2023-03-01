@@ -54,7 +54,7 @@ System.out.println("Beautiful");
 
         if (logout != null)
             model.addAttribute("message", "You have been logged out successfully.");
-
+   System.out.println();
         return "login";
     }
 

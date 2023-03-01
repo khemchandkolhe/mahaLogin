@@ -5,3 +5,4 @@ this is for git hooks  of mahalogin
 2ns commit
 3rd commit
 6th commit
+7th commit

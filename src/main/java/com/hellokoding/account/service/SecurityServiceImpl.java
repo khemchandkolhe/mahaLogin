@@ -36,7 +36,7 @@ System.out.println();
     public void autologin(String username, String password) {
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
         UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, password, userDetails.getAuthorities());
-
+ System.out.println();
         authenticationManager.authenticate(usernamePasswordAuthenticationToken);
 System.out.println();
         if (usernamePasswordAuthenticationToken.isAuthenticated()) {

@@ -40,6 +40,7 @@ System.out.println("Beautiful");
         }
 
         userService.save(userForm);
+     System.out.println();
 
         securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
 

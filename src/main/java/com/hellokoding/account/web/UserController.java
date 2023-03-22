@@ -27,7 +27,7 @@ public class UserController {
     public String registration(Model model) {
         model.addAttribute("userForm", new User());
 System.out.println("Beautiful");
-
+System.out.println("Beautiful");
         return "registration";
     }
 
